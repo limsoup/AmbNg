@@ -1,0 +1,46 @@
+.linksHeader {
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.pageWrapper{
+	margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.link-ctrl {
+	margin: 0 20px;
+}
+
+.manage-link-info, .link-info {
+	/*line-height: 20px;*/
+	padding: 7px;
+	font-size: 20px;
+}
+.manage-link-input {
+	margin-top: 3px;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+.landing-body {
+	width: 100%;
+	height: 100%;
+	background-color: #426574;
+	font-size: 48px;
+	color: #ddd;
+}

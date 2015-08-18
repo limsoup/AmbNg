@@ -1,0 +1,50 @@
+
+
+<div class="row">
+	<div class="col-lg-6">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-1"><h1>Link Info</h1></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-1"><h3>Name</h3></div>
+			<div class="col-lg-4"><h3>Clicks</h3></div>
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4"></div>
+		</div>
+
+		<div ng-repeat="aLink in data.links" class="row">
+				<div class="col-lg-4 col-lg-offset-1">
+					<span class="link-info">
+						<a ui-sref="landing({ linkName: aLink.name })">{{aLink.name}}</a>
+					</span>
+				</div>
+				<div class="col-lg-2">
+					<span class="link-info">{{aLink.clicks}}</span>
+				</div>
+		        <div class="col-lg-5">
+		        	<button class="btn btn-primary link-ctrl" ng-click="editLink(aLink)">Edit</button>
+		        	<button class="btn btn-primary link-ctrl" ng-click="deleteLink(aLink)">Delete</button>
+		        </div>
+		</div>
+	</div>
+
+	<div class="col-lg-6">
+		<div class="row">
+			<div class="col-lg-6">
+				<h1>Manage Links</h1>
+			</div>
+		</div>
+		<div class="linksHeader row">
+
+			<div class="col-lg-4">
+				<span class="manage-link-info">Add a link: </span>
+			</div>
+			<div class="col-lg-4">
+				<input type="text" class="manage-link-input" ng-model="viewData.linkName"/>
+			</div>
+			<div class="col-lg-4">
+				<button class="btn btn-primary link-ctrl" ng-click="addLink()">Add</button>
+			</div>
+		</div>
+	</div>
+</div>
